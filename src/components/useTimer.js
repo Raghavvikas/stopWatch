@@ -46,16 +46,24 @@ const UseTimer = () => {
 
   return (
     <>
-      <h1>Timer</h1>
-      <div>
-        {" "}
-        <span>{startTimer()}</span>{" "}
-      </div>
-      <div>
-        <button onClick={handleStart}>Start</button>
-        <button onClick={handlePause}>Pause</button>
-        <button onClick={handleResume}>Resume</button>
-        <button onClick={handleReset}>Reset</button>
+      <div className="container">
+        <div>
+          <span id="timer">{startTimer()}</span>{" "}
+        </div>
+        <div className="buttons">
+          <button id="start" onClick={handleStart}>
+            Start
+          </button>
+          <button id="pause" onClick={handlePause}>
+            Pause
+          </button>
+          <button id="resume" onClick={handleResume}>
+            Resume
+          </button>
+          <button id="reset" onClick={handleReset}>
+            Reset
+          </button>
+        </div>
       </div>
     </>
   );

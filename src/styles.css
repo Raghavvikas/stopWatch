@@ -2,3 +2,57 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#start {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+#pause {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+}
+#resume {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+}
+#reset {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+#timer {
+  font-size: 1.5rem;
+  color: seagreen;
+  font-weight: 700;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
