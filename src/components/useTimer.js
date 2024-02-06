@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 
 const UseTimer = () => {
-  const [isRunning, setIsRunning] = React.useState(false);
-  const [seconds, setSeconds] = React.useState(0);
+  const [isRunning, setIsRunning] = useState(false);
+  const [seconds, setSeconds] = useState(0);
 
   var interval = useRef();
 
@@ -14,11 +14,9 @@ const UseTimer = () => {
     clearInterval(interval.current);
     setIsRunning(false);
   };
+
   const handleResume = () => {
     setIsRunning(true);
-    interval.current = setInterval(() => {
-      setSeconds((prevTime) => prevTime + 1);
-    });
   };
 
   const handleReset = () => {
