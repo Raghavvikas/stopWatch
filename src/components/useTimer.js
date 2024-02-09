@@ -51,11 +51,11 @@ const UseTimer = () => {
           <span id="timer">{startTimer()}</span>{" "}
         </div>
         <div className="buttons">
-          <button id="start" onClick={handleStart}>
-            Start
-          </button>
-          <button id="pause" onClick={handlePause}>
-            Pause
+          <button
+            id="start"
+            onClick={isRunning === false ? handleStart : handlePause}
+          >
+            {isRunning === false ? "Start" : "Pause"}
           </button>
           <button id="resume" onClick={handleResume}>
             Resume
